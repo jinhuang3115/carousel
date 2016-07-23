@@ -1,0 +1,51 @@
+.module-carousel {
+  width: 900px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  .ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .li {
+    float: left;
+    width: 900px;
+    height: 600px;
+  }
+  .arrow-left {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    background-color: white;
+    opacity: 0.7;
+    display: none;
+    .icon{
+      background: url("images/arrow-left.png") 0 0 no-repeat;
+      width: 100px;
+      height: 120px;
+      display: block;
+    }
+  }
+  .arrow-right {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    opacity: 0.7;
+    display: none;
+    .icon{
+      background: url("images/arrow-right.png") 0 0 no-repeat;
+      width: 100px;
+      height: 120px;
+      display: block;
+
+    }
+  }
+}
