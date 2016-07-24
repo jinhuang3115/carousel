@@ -1,12 +1,17 @@
 .module-carousel {
-  width: 900px;
-  height: 600px;
-  position: relative;
   margin: 0 auto;
-  overflow: hidden;
+  width: 1250px;
+  .container {
+    width: 900px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    float:left;
+  }
   .ul {
     list-style-type: none;
-    margin:0;
+    margin: 0;
     padding: 0;
     position: absolute;
     top: 0;
@@ -18,34 +23,56 @@
     height: 600px;
   }
   .arrow-left {
-    position: absolute;
-    left: 0;
-    top: 45%;
-    background-color: white;
-    opacity: 0.7;
-    display: none;
-    .icon{
-      background: url("images/arrow-left.png") 0 0 no-repeat;
-      width: 100px;
-      height: 120px;
-      display: block;
-    }
-  }
-  .arrow-right {
-    position: absolute;
-    right: 0;
-    top: 45%;
+    float:left;
+    background: url("images/arrow-left.png") 0 0 no-repeat;
     width: 100px;
     height: 120px;
-    background-color: white;
-    opacity: 0.7;
-    display: none;
-    .icon{
-      background: url("images/arrow-right.png") 0 0 no-repeat;
-      width: 100px;
-      height: 120px;
+    margin-right: 74px;
+    margin-top:250px
+  }
+  .arrow-right {
+    float:left;
+    margin-left: 74px;
+    width: 100px;
+    height: 120px;
+    margin-top:250px;
+    background: url("images/arrow-right.png") 0 0 no-repeat;
+  }
+  .title-mask {
+    width: 750px;
+    height: 112px;
+    background-color: #000;
+    opacity: 0.5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    position: absolute;
+    left: 75px;
+    top: 5px;
+    z-index: 0;
+  }
+  .title-region {
+    position: absolute;
+    width: 750px;
+    height: 112px;
+    left: 75px;
+    top: 5px;
+    font-family: 'Centruy Gothic';
+    z-index: 1;
+    .title {
+      color: #fff;
+      font-size: 31px;
       display: block;
-
+      margin-top: 20px;
+      text-align: center;
+      line-height: 31px;
+      height: 31px;
+    }
+    .click-more {
+      color: #cc6121;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      margin-top: 35px;
     }
   }
 }

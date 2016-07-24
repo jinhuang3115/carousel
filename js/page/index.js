@@ -8,9 +8,18 @@ require('index.scss');
 const Carousel = require('carousel');
 
 let images = [
-    require('slide1'),
-    require('slide2'),
-    require('slide3')
+    {
+        title: 'slide1',
+        src: require('slide1')
+    },
+    {
+        title: 'slide2',
+        src: require('slide2')
+    },
+    {
+        title: 'slide3',
+        src: require('slide3')
+    }
 ];
 
 let carousel = new Carousel('#main', images);
